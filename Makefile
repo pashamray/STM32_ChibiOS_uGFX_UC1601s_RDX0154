@@ -121,6 +121,8 @@ CSRC = $(STARTUPSRC) \
        $(HALSRC) \
        $(PLATFORMSRC) \
        $(BOARDSRC) \
+       $(CHIBIOS)/os/various/evtimer.c \
+       $(CHIBIOS)/os/various/syscalls.c \
        $(GFXSRC) \
 		main.c \
 		lib/menu.c
@@ -157,7 +159,8 @@ INCDIR = $(CHIBIOS)/os/license \
 		 $(CHIBIOS)/os/various \
          $(STARTUPINC) $(KERNINC) $(PORTINC) $(OSALINC) \
          $(HALINC) $(PLATFORMINC) $(BOARDINC) \
-         $(GFXINC)
+         $(GFXINC) \
+         $(CHIBIOS)/os/various
 
 #
 # Project, sources and paths
